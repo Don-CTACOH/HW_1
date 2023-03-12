@@ -3,14 +3,14 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
-def vstepen(a, b):
-    if b == 0:
-        return 1
-    return a * vstepen(a, b - 1)
+# def vstepen(a, b):
+#     if b == 0:
+#         return 1
+#     return a * vstepen(a, b - 1)
 
-a = int(input('Введите число: '))
-b = int(input('Введите степень: '))
-print(vstepen(a, b))
+# a = int(input('Введите число: '))
+# b = int(input('Введите степень: '))
+# print(vstepen(a, b))
 
 
 
@@ -19,11 +19,11 @@ print(vstepen(a, b))
 # 2 2
 # 4
 
-# def sum(a, b):
-#     if b == 0:
-#         return a
-#     return 1 + sum(a, b - 1)
+def sum(a, b):
+    if b == 0:
+        return a
+    return 1 + sum(a, b - 1)
 
-# a = int(input('Введите число 1: '))
-# b = int(input('Введите число 2: '))
-# print(f'Сумма двух чисел = {sum(a, b)}')
+a = int(input('Введите число 1: '))
+b = int(input('Введите число 2: '))
+print(f'Сумма двух чисел = {sum(a, b)}')
