@@ -95,3 +95,4 @@ if N == 1:
 	print('За это слово вы получаете', sum([k for i in word for k, v in eng.items() if i in v]), 'очков')
 elif N == 0:
 	print('За это слово вы получаете', sum([k for i in word for k, v in rus.items() if i in v]), 'очков')
+    
